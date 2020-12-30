@@ -2,7 +2,7 @@ import Header from "../components/Header"
 
 const Home = () => {
   return(
-    <main class="prose">
+    <main className="prose">
       Content
     </main>
   )

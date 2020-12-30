@@ -6,13 +6,12 @@ const Header = () => {
       <div className="flex-grow-0 h-28 overflow-hidden pl-4">
         <img src="/logo.svg" alt="Weston Dransfield Logo" className="w-60" />
       </div>
-      <div>
-        <Link href="/">
-          <a>Articles</a>
+      <div className="pt-2">
+        <Link href="/articles">
+          <a className="nav-link mr-3">Articles</a>
         </Link>
-        <span> </span>
         <Link href="/">
-          <a>About</a>
+          <a className="nav-link transition-all">About</a>
         </Link>
       </div>
     </header>
