@@ -33,7 +33,7 @@ export const indexFormattedPosts = () => {
     .sort((a, b) => (a.sortKey > b.sortKey ? 1 : -1));
 };
 
-export const filterPosts = async (currentFilterText, posts, originalPosts) => {
+export const filterPosts = async (currentFilterText, originalPosts) => {
   if (!currentFilterText) {
     return originalPosts;
   }
@@ -45,5 +45,5 @@ export const filterPosts = async (currentFilterText, posts, originalPosts) => {
     keys: ["body", "title", "datetime"],
   };
 
-  return new Fuse(posts, options).search(currentFilterText).map((r) => r.item);
+  return new Fuse(originalPosts, options).search(currentFilterText).map((r) => r.item);
 };

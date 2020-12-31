@@ -19,7 +19,7 @@ const Posts = (props) => {
           value={filterText}
           onChange={async (e) => {
             const { value } = e.currentTarget;
-            const filteredPosts = await filterPosts(value, posts, allPosts);
+            const filteredPosts = await filterPosts(value, allPosts);
 
             setPosts(filteredPosts);
             setFilterText(value);
