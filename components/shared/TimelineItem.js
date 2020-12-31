@@ -12,14 +12,12 @@ const TimelineItem = ({children, title, dateTime}) => {
         </div>
       </div>
       <div className="flex-grow rounded shadow-lg border-solid border border-gray-100 my-8 p-5 max-w-xs md:max-w-2xl">
-        <Link href="/">
-          <>
+        <Link href="/posts">
             <a className="nav-link">
               <h2 className="font-bold text-xl font-serif">{title}</h2>
             </a>
-            <h3 className="mb-3 italic text-gray-500">{ dateTime }</h3>
-          </>
         </Link>
+        <h3 className="mb-3 italic text-gray-500">{ dateTime }</h3>
         {children}
       </div>
     </div>

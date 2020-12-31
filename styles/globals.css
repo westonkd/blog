@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .nav-link {
-  @apply hover:text-blue-300 focus:text-blue-300 transition-all text-gray-700 cursor-pointer no-underline text-xl
+  @apply hover:underline focus:underline transition-all text-gray-700 cursor-pointer no-underline text-xl font-serif
 }
 
 .dot {
