@@ -13,8 +13,8 @@ const TimelineItem = ({ children, title, dateTime, slug, tags }) => {
       </div>
       <div className="flex-grow rounded shadow-lg border-solid border border-gray-100 my-8 p-5 max-w-xs md:max-w-2xl">
         <Link href={`/posts/${slug}`}>
-          <a className="nav-link">
-            <h2 className={`font-sans prose-h2 ${textColors[tags[0] || 'default']}`}>{title}</h2>
+          <a className={`${textColors[tags[0]] || 'default'}`}>
+            <h2 className="font-sans prose-h2">{title}</h2>
           </a>
         </Link>
         <div className="flex">
