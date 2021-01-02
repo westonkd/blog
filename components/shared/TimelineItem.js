@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const TimelineItem = ({children, title, dateTime}) => {
+const TimelineItem = ({children, title, dateTime, slug}) => {
   return(
     <div className="flex justify-center">
       <div className="w-10 border-l border-gray-400">
@@ -12,9 +12,9 @@ const TimelineItem = ({children, title, dateTime}) => {
         </div>
       </div>
       <div className="flex-grow rounded shadow-lg border-solid border border-gray-100 my-8 p-5 max-w-xs md:max-w-2xl">
-        <Link href="/posts">
+        <Link href={`/posts/${slug}`}>
             <a className="nav-link">
-              <h2 className="font-bold text-xl font-serif">{title}</h2>
+              <h2 className="font-sans prose-h2">{title}</h2>
             </a>
         </Link>
         <h3 className="mb-3 italic text-gray-500">{ dateTime }</h3>

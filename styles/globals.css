@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .nav-link {
-  @apply hover:underline focus:underline transition-all text-gray-700 cursor-pointer no-underline text-xl font-serif
+  @apply hover:animate-pulse hover:underline focus:animate-pulse focus:underline transition-all text-gray-700 cursor-pointer no-underline text-xl font-serif;
 }
 
 .dot {
@@ -13,4 +13,13 @@
   width: 15px;
   border-radius: 50%;
   display: inline-block;
+}
+
+.prose-h2 {
+  color: #111827;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.5m;
+  line-height: 1.1111111;
 }

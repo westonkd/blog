@@ -17,6 +17,12 @@ export const postList = (context) => {
   return data;
 };
 
+export const allSlugs = () => {
+  return postList(require.context("../posts", true, /\.md$/)).map(
+    (p) => p.slug
+  );
+};
+
 export const indexFormattedPosts = () => {
   return postList(require.context("../posts", true, /\.md$/))
     .map((post) => {
@@ -28,6 +34,7 @@ export const indexFormattedPosts = () => {
         dateTime: dateTime.toDateString(),
         title,
         body: `${post.markdownBody.split("\n")[0]}...`, // Only include the first paragraph
+        slug: post.slug,
       };
     })
     .sort((a, b) => (a.sortKey > b.sortKey ? 1 : -1));
@@ -45,5 +52,7 @@ export const filterPosts = async (currentFilterText, originalPosts) => {
     keys: ["body", "title", "datetime"],
   };
 
-  return new Fuse(originalPosts, options).search(currentFilterText).map((r) => r.item);
+  return new Fuse(originalPosts, options)
+    .search(currentFilterText)
+    .map((r) => r.item);
 };
