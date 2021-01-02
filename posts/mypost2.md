@@ -2,7 +2,7 @@
 title: 'Foo'
 author: 'Weston'
 date: 'January 30, 2020'
-tags: 'testing,hello world'
+tags: 'LTI,Integration'
 ---
 Mutiny driver coffer black spot shrouds galleon yardarm weigh anchor cutlass pink. Ahoy booty boatswain Brethren of the Coast deadlights lee tack coxswain port sheet. Hands lugger Sail ho plunder ho holystone bilged on her anchor driver log black spot.
 
