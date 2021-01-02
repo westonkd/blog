@@ -7,10 +7,10 @@ const Header = () => {
         <img src="/logo.svg" alt="Weston Dransfield Logo" className="w-80 hover:animate-pulse" />
       </div>
       <div className="pt-2">
-        <Link href="/posts">
+        <Link href="/">
           <a className="nav-link mr-3">Posts</a>
         </Link>
-        <Link href="/">
+        <Link href="/about">
           <a className="nav-link transition-all">About</a>
         </Link>
       </div>

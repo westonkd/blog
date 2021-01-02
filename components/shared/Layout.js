@@ -13,7 +13,7 @@ const Layout = ({children, pageTitle}) => {
         <section className="flex flex-col overlfow-x-auto px-5 py-12 md:px-60 items-center">
           {children}
         </section>
-        <footer className="">test</footer>
+        <footer className=""></footer>
       </div>
     </>
   )

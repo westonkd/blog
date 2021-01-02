@@ -7,13 +7,17 @@ const Timeline = ({ items }) => {
     body: "body",
   };
 
+  const elements = (items.length) > 0 ? items.map((item) => (
+    <TimelineItem dateTime={item.dateTime} title={item.title} slug={item.slug} key={item.slug}>
+      {item.body}
+    </TimelineItem>
+  )) : <div className="flex-grow text-center mt-8">
+    No results found 😢
+  </div>
+
   return (
     <div className="flex flex-col" aria-live="polite" id="search-results">
-      {items.map((item) => (
-        <TimelineItem dateTime={item.dateTime} title={item.title} slug={item.slug} key={item.slug}>
-          {item.body}
-        </TimelineItem>
-      ))}
+      {elements}
     </div>
   );
 };
