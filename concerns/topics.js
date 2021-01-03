@@ -1,17 +1,17 @@
 export const colors = {
   "LTI": "bg-indigo-300",
-  "Integration": "bg-indigo-400",
-  "Education": "bg-indigo-500",
-  "Personal Learning": "bg-indigo-600",
-  "Pi": "bg-indigo-700"
+  "Integration": "bg-blue-300",
+  "Education": "bg-yellow-300",
+  "Personal Learning": "bg-green-300",
+  "Pi": "bg-gray-400"
 }
 
 export const textColors = {
   "LTI": "text-indigo-300",
-  "Integration": "text-indigo-400",
-  "Education": "text-indigo-500",
-  "Personal Learning": "text-indigo-600",
-  "Pi": "text-indigo-700",
+  "Integration": "text-blue-300",
+  "Education": "text-yellow-300",
+  "Personal Learning": "text-green-300",
+  "Pi": "text-gray-400",
   "default": "text-black"
 }
 
