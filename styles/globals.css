@@ -4,7 +4,15 @@
 @tailwind utilities;
 
 .nav-link {
-  @apply hover:animate-pulse hover:underline focus:animate-pulse focus:underline transition-all text-gray-700 cursor-pointer no-underline text-xl font-serif;
+  @apply hover:animate-pulse hover:underline focus:animate-pulse focus:underline transition-all text-gray-700 cursor-pointer no-underline text-xl;
+}
+
+.nav-link:hover {
+  color: #364DC4;
+}
+
+.nav-link:focus {
+  color: #364DC4;
 }
 
 .dot {
@@ -21,4 +29,15 @@
   margin-top: 0;
   margin-bottom: 0.5m;
   line-height: 1.1111111;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -4px 4px #A5B4FC, -8px 8px #6EE7B7, -12px 12px #364dc4
 }

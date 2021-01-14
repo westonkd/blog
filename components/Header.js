@@ -3,10 +3,12 @@ import Link from "next/link"
 const Header = () => {
   return(
     <header className="flex flex-col items-center">
-      <div className="flex-grow-0 h-36 overflow-hidden pl-4">
-        <img src="/logo.svg" alt="Weston Dransfield Logo" className="w-80 hover:animate-pulse" />
+      <div className="flex-grow-0 h-28 overflow-hidden pl-4">
+        <span className="logo">
+          WD
+        </span>
       </div>
-      <div className="pt-2">
+      <div>
         <Link href="/">
           <a className="nav-link mr-3">Posts</a>
         </Link>
