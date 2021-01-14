@@ -2,14 +2,19 @@ import matter from "gray-matter";
 import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { allSlugs } from "../../concerns/posts";
+import { textColors } from "../../concerns/topics";
 
 const Post = ({ frontmatter, markdownBody }) => {
   return (
-    <article className="prose">
-      <h1>{frontmatter.title}</h1>
-      <p>By {frontmatter.author}</p>
-      <div>
-        <ReactMarkdown source={markdownBody} />
+    <article>
+      <h1 className={`${textColors[frontmatter.tags?.split(",")[0]]} font-bold text-4xl`} >{frontmatter.title}</h1>
+      <div className="prose">
+        <p>
+          <em>By {frontmatter.author}</em>
+        </p>
+        <div>
+          <ReactMarkdown source={markdownBody} />
+        </div>
       </div>
     </article>
   );
