@@ -15,6 +15,8 @@ const Layout = ({children, pageTitle}) => {
         </section>
         <footer className=""></footer>
       </div>
+      <div className="hidden bg-indigo-300 bg-blue-300 bg-yellow-300 bg-green-300 bg-pink-400 text-indigo-300 text-blue-300 text-yellow-300 text-green-300 text-pink-400 text-black">
+      </div>
     </>
   )
 }
