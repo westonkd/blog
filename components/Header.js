@@ -5,7 +5,7 @@ const Header = () => {
     <header className="flex flex-col items-center">
       <div className="flex-grow-0 h-28 overflow-hidden pl-4">
         <span className="logo">
-          WD
+          Weston
         </span>
       </div>
       <div>
